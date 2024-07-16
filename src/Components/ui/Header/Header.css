@@ -1,0 +1,252 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Other styles */
+.header-top {
+    background-color: var(--color-gray-blackblue);
+}
+
+.header-top-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.header-top-flex p span {
+    color: var(--color-green);
+    font-size: var(--font-size-sm);
+}
+
+.header-top-flex p {
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-link ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-open);
+}
+
+.nav-link a {
+    color: black;
+}
+
+.nav-link a:hover {
+    color: var(--color-green);
+}
+
+.call-btn a {
+    color: var(--color-green);
+    font-size: var(--font-size-x-sm);
+}
+
+.call-btn span {
+    color: black;
+    font-size: var(--font-size-x-sm);
+}
+
+.social-link ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: var(--font-size-sm);
+}
+
+.social-link a {
+    color: black;
+}
+
+.social-link li {
+    display: inline-block;
+    perspective: 1000px;
+    /* Add perspective */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.icon:hover {
+    transform: rotateY(180deg);
+}
+
+.facebook-icon {
+    color: #1876f2;
+}
+
+.twitter-icon {
+    color: #1DA1F2;
+}
+
+.linkedin-icon {
+    color: #0077B5;
+}
+
+.youtube-icon {
+    color: #FF0000;
+}
+
+.email-icon {
+    color: #000000;
+}
+
+.icon::before {
+    content: attr(data-icon);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.icon::after {
+    content: attr(data-icon-flip);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    transform: translateY(.4rem);
+}
+
+@media (max-width:1200px) {
+    .call-btn {
+        display: none;
+    }
+}
+
+@media (max-width:995px) {
+    .nav-link {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .call-btn {
+        display: none;
+    }
+
+    .header-top-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .nav-link ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 10px;
+    }
+
+    .nav-logo img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .header-top-flex {    
+        row-gap: 0;
+        display: inline-block;
+    }
+    .header-top-flex p {
+        display: inline;
+        margin: 0 1rem;
+    }
+    .header-top a {
+        display: none;
+    }
+    .social-link ul {
+        display: none;
+    }
+
+    .vertical-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+    }
+    .vertical-nav .nav-link {
+        /* z-index: -1; */
+        display: block;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        /* background-color: white; */
+        width: 100%;
+        
+    }
+    .vertical-nav .nav-link ul{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: white;
+        margin: 0 2rem;
+        /* height: 0; */
+    }
+}

@@ -1,0 +1,20 @@
+.timer {
+    display: flex;
+    gap: 1rem;
+}
+.value {
+    color: green;
+    font-size: 1.6rem;
+    font-weight: bolder;
+
+}
+.label {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .timer {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}

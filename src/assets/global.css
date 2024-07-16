@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-white: #fff;
+    --color-gray: rgb(115, 118, 124);
+    --background-color-blue: rgb(26, 87, 165);
+    --color-gray-blackblue: #32404D;
+    --color-green: #00B78A;
+
+    --font-family-open: "Open Sans", Arial, sans-serif;
+    --font-family-Chivo: "Chivo", sans-serif;
+    --font-size-x-sm: 1.1rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 5rem;
+    --font-size-x-md: 3rem;
+    --font-size-lg: 6.2rem;
+    --spacing-sm: 4.8rem;
+
+    --spacing-md: 10rem;
+    --spacing-lg: 11.2rem;
+
+    --screen-sm: 76.8rem;
+    --screen-md: 99.2rem;
+    --screen-lg: 120rem;
+}
+
+
+
+* {
+    font-family: var(--font-family-Chivo);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 995px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 450px;
+    }
+}

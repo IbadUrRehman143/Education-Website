@@ -1,0 +1,140 @@
+.img-4 {
+    width: 950px;
+    background-color: #FFF6EE;
+    height: 500px;
+}
+
+.section-8 {
+    width: 954px;
+    background-color: #007A5C;
+    height: 500px;
+}
+
+.half-half {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+
+}
+
+.img-4 img {
+    width: 950px;
+    height: 500px;
+
+}
+
+.about-8 {
+    margin-left: 4rem;
+}
+
+.about-8 h1 {
+    padding-top: 13rem;
+    font-size: var(--font-size-x-md);
+    font-family: var(--font-family-Chivo);
+}
+
+.about-8 p {
+    padding-top: 2rem;
+    font-size: var(--font-size-sm);
+    width: 62rem;
+    font-family: var(--font-family-Chivo);
+    color: #C9D6CB;
+}
+
+.incor {
+    margin-top: 4rem;
+    font-size: var(--font-size-sm);
+
+}
+
+.about-8 a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+@media (max-width:1200px) {
+    .half-half {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+    
+    }
+}
+@media (max-width:995px) {
+    .half-half {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+
+    }
+
+    .about-8 h1 {
+        padding-top: 13rem;
+        font-size: var(--font-size-x-md);
+        font-family: var(--font-family-Chivo);
+    }
+
+    .about-8 p {
+        padding-top: 2rem;
+        font-size: var(--font-size-sm);
+        width: 62rem;
+        font-family: var(--font-family-Chivo);
+        color: #C9D6CB;
+    }
+
+    .img-4 {
+        width: 950px;
+        background-color: #FFF6EE;
+        height: 500px;
+    }
+
+    .section-8 {
+        width: 954px;
+        background-color: #007A5C;
+        height: 500px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .half-half {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+
+    }
+
+    .about-8 h1 {
+        padding-top: 6rem;
+        width: 20rem;
+        font-size: var(--font-size-sm);
+        font-family: var(--font-family-Chivo);
+    }
+
+    .about-8 p {
+        padding-top: 2rem;
+        font-size: var(--font-size-sm);
+        width: 30rem;
+        font-family: var(--font-family-Chivo);
+        color: #C9D6CB;
+    }
+
+    .img-4 {
+        max-width: 360px;
+        background-color: #FFF6EE;
+        height: 300px;
+    }
+
+    .section-8 {
+        width: 100%;
+        background-color: #007A5C;
+        /* height: 500px; */
+    }
+
+    .img-4 img {
+        /* margin-top: 11rem; */
+        width: 115%;
+        height: 100%;
+        margin-left: -6rem;
+    }
+}

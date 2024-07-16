@@ -1,0 +1,78 @@
+.section-1 {
+    background-image: url(../../../assets/Images/h1_hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+    margin: auto;
+    background-position: center 10%;
+}
+
+.section-container h3 {
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+}
+
+.section-container h1 {
+    font-size: var(--font-size-md);
+    color: var(--color-white);
+    width: 60rem;
+    padding-top: 3rem;
+}
+
+.section-container p {
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+    width: 55rem;
+    padding-top: 1rem;
+}
+
+.button-section {
+    padding-top: 5rem;
+}
+
+.btn-section1 {
+    border: 1px solid transparent;
+    background-color: var(--color-green);
+    padding: 2rem;
+    font-size: var(--font-size-sm);
+
+}
+
+.btn-section1 :hover ::before {
+    transform: translateY(4px);
+}
+
+@media (max-width:768px) {
+    .section-container h3 {
+        font-size: var(--font-size-x-sm);
+        color: var(--color-white);
+    }
+
+    .section-1 {
+        padding-top: 1.5rem;
+        max-height: 25rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section-container h1 {
+        font-size: 2rem;
+        color: var(--color-white);
+        width: 300px;
+        padding-top: 1rem;
+    }
+
+    .section-container p {
+        font-size: var(--font-size-x-sm);
+        color: var(--color-white);
+        width: 30rem;
+        padding-top: 1rem;
+        /* padding-bottom: 0; */
+    }
+    .button-section {
+        padding-top: 2rem;
+    }
+    .section-container {
+        margin-left: 2rem;
+    }
+}

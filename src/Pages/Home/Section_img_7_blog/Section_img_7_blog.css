@@ -1,0 +1,67 @@
+.row-col {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 8rem;
+
+}
+
+.row8{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-top: 0rem;
+}
+
+.date {
+    background-color: var(--color-green);
+    width: 65px;
+    padding: 2rem;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-Chivo);
+    font-weight: 700;
+    position: absolute;
+    bottom: 17rem;
+    left: 3rem;
+}
+
+.description {
+    margin-top: 4rem;
+}
+
+.description a {
+    color: black;
+    font-size: 25px;
+    font-family: var(--font-family-Chivo);
+    font-weight: 600;
+
+}
+
+.description p {
+    color: var(--color-gray);
+    font-size: var(--font-size-x-sm);
+    font-family: var(--font-family-Chivo);
+    font-weight: 600;
+    margin-top: 1rem;
+
+}
+
+.description a:hover {
+    color: var(--color-green);
+}
+
+.spn a {
+    color: var(--color-gray);
+
+}
+
+.spn a:hover {
+    color: var(--color-green);
+
+}
+
+.spn-2 {
+    margin-top: 2rem;
+}
